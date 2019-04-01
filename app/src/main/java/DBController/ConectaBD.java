@@ -13,6 +13,11 @@ import java.net.URL;
 
 public class ConectaBD {
 
+    private boolean checkNetworkConnection(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo info = cm.getActiveNetworkInfo();
+        return (info != null && info.isConnected());
+    }
     private static String URL_GLOBAL_DB = "http://10.21.40.27/web_service/";
 
     public int insertUsuarios(Context context, String nome, String email, String senha) throws IOException {
@@ -32,10 +37,22 @@ public class ConectaBD {
             return 1;
         }
     }
-    private boolean checkNetworkConnection(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo info = cm.getActiveNetworkInfo();
-        return (info != null && info.isConnected());
+
+    public int readUsuarios(Context context) throws IOException {
+        if (!checkNetworkConnection(context)) {
+            return 0;
+        }
+        checkThreadPolicy();
+        URL url = new URL(URL_GLOBAL_DB + "webService/read.php");
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String response = bufferedReader.readLine();
+        if (response.equals("false")) {
+            Toast.makeText(context, "Erro no BD Global!", Toast.LENGTH_LONG).show();
+            return 0;
+        } else {
+            return 1;
+        }
     }
 
     private void checkThreadPolicy(){
