@@ -38,6 +38,10 @@ public class ConectaBD {
         }
     }
 
+    public void teste() {
+        //Teste de commimt
+    }
+
     public int readUsuarios(Context context) throws IOException {
         if (!checkNetworkConnection(context)) {
             return 0;
