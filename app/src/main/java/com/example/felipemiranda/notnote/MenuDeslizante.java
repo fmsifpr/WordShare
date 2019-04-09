@@ -1,5 +1,6 @@
 package com.example.felipemiranda.notnote;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,18 +81,28 @@ public class MenuDeslizante extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_notas) {
 
-        } else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_lembretes) {
 
-        } else if (id == R.id.nav_share) {
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_anexos) {
 
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_salas) {
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_configurar) {
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

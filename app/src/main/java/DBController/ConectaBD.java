@@ -37,6 +37,23 @@ public class ConectaBD {
             return 1;
         }
     }
+    public int insertNota(Context context, String titulo, String subtitulo, String conteudo) throws IOException {
+        if (!checkNetworkConnection(context)) {
+            return 0;
+        }
+        checkThreadPolicy();
+        String values = "nome="+titulo+"&"+"senha="+subtitulo+"&"+"email="+conteudo;
+        URL url = new URL(URL_GLOBAL_DB + "webService/criarnota.php?"+values);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String response = bufferedReader.readLine();
+        if (response.equals("false")) {
+            Toast.makeText(context, "Erro no BD Global!", Toast.LENGTH_LONG).show();
+            return 0;
+        } else {
+            return 1;
+        }
+    }
 
     public void teste() {
         //Teste de commimt

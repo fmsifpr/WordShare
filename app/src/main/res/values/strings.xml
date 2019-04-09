@@ -1,13 +1,23 @@
 <resources>
 
-    <string name="app_name">NotNote</string>
+    <string name="app_name">WordShare</string>
+
     <string name="botao_login">Login</string>
     <string name="botao_cadastrar">Cadastrar</string>
     <string name="botao_sobre">Sobre</string>
+    <string name="botao_criar">Criar</string>
+
     <string name="cadastro_nome">Nome</string>
     <string name="cadastro_email">Email</string>
     <string name="cadastro_senha">Senha</string>
     <string name="cadastro_confirmar_senha">Confirmar a Senha</string>
+    <string name="cadastro_feito">Cadastro realizado com sucesso</string>
+    <string name="cadastro_erro">Cadastro não realizado</string>
+
+    <string name="nota_titulo">Título</string>
+    <string name="nota_subtitulo">Subtítulo</string>
+    <string name="nota_conteudo">Escreva aqui...</string>
+
     <string name="title_activity_menu_deslizante">MenuDeslizante</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -15,5 +25,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
 
 </resources>
