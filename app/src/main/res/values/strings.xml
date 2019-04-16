@@ -2,6 +2,10 @@
 
     <string name="app_name">WordShare</string>
 
+    <string name="nota">Anotações</string>
+    <string name="nota_pessoal">Pessoais</string>
+    <string name="nota_compartilhada">Compartilhadas</string>
+
     <string name="botao_login">Login</string>
     <string name="botao_cadastrar">Cadastrar</string>
     <string name="botao_sobre">Sobre</string>

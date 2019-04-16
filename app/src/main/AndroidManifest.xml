@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NotaCompartilhada"></activity>
+        <activity android:name=".Notas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +27,7 @@
             android:name=".MenuDeslizante"
             android:label="@string/title_activity_menu_deslizante"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CriarNota"></activity>
+        <activity android:name=".CriarNota" />
     </application>
 
 </manifest>
