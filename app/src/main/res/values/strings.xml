@@ -6,6 +6,11 @@
     <string name="nota_pessoal">Pessoais</string>
     <string name="nota_compartilhada">Compartilhadas</string>
 
+    <string name="menu_caderno_pessoal">Caderno Pessoal</string>
+    <string name="menu_caderno_compartilhado">Caderno Pessoal</string>
+    <string name="menu_opções">Caderno Pessoal</string>
+
+
     <string name="botao_login">Login</string>
     <string name="botao_cadastrar">Cadastrar</string>
     <string name="botao_sobre">Sobre</string>

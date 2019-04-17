@@ -4,6 +4,9 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+        <item android:title="Agenda Pessoal">
+            <menu>
         <item
             android:id="@+id/nav_notas"
             android:icon="@drawable/ic_menu_gallery"
@@ -16,12 +19,33 @@
             android:id="@+id/nav_anexos"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Anexos" />
-        <item
-            android:id="@+id/nav_salas"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Salas" />
-        <item
-            android:id="@+id/nav_configurar"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Configurações" />
+            </menu>
+        </item>
+
+        <item android:title="Agenda Compartilhada">
+            <menu>
+                <item
+                    android:id="@+id/nav_notas_compartilhada"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Notas" />
+                <item
+                    android:id="@+id/nav_lembretes_compartilhada"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Lembretes" />
+                <item
+                    android:id="@+id/nav_anexos_compartilhada"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Anexos" />
+            </menu>
+        </item>
+
+        <item android:title="opções">
+            <menu>
+                <item
+                    android:id="@+id/nav_configurar"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Configurações" />
+            </menu>
+        </item>
+
     </group>
