@@ -5,46 +5,46 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:title="Agenda Pessoal">
+        <item android:title="@string/menu_caderno_pessoal">
             <menu>
         <item
             android:id="@+id/nav_notas"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Notas" />
+            android:icon="@drawable/ic_menu_notas"
+            android:title="@string/menu_notas" />
         <item
             android:id="@+id/nav_lembretes"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Lembretes" />
+            android:icon="@drawable/ic_menu_anexo"
+            android:title="@string/menu_anexos" />
         <item
             android:id="@+id/nav_anexos"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Anexos" />
+            android:icon="@drawable/ic_menu_agenda"
+            android:title="@string/menu_agenda" />
             </menu>
         </item>
 
-        <item android:title="Agenda Compartilhada">
+        <item android:title="@string/menu_caderno_compartilhado">
             <menu>
                 <item
                     android:id="@+id/nav_notas_compartilhada"
                     android:icon="@drawable/ic_menu_gallery"
-                    android:title="Notas" />
+                    android:title="@string/menu_notas" />
                 <item
                     android:id="@+id/nav_lembretes_compartilhada"
                     android:icon="@drawable/ic_menu_camera"
-                    android:title="Lembretes" />
+                    android:title="@string/menu_anexos" />
                 <item
                     android:id="@+id/nav_anexos_compartilhada"
                     android:icon="@drawable/ic_menu_slideshow"
-                    android:title="Anexos" />
+                    android:title="@string/menu_agenda" />
             </menu>
         </item>
 
-        <item android:title="opções">
+        <item android:title="@string/menu_opções">
             <menu>
                 <item
                     android:id="@+id/nav_configurar"
                     android:icon="@drawable/ic_menu_manage"
-                    android:title="Configurações" />
+                    android:title="@string/menu_configurar" />
             </menu>
         </item>
 

@@ -7,8 +7,12 @@
     <string name="nota_compartilhada">Compartilhadas</string>
 
     <string name="menu_caderno_pessoal">Caderno Pessoal</string>
-    <string name="menu_caderno_compartilhado">Caderno Pessoal</string>
-    <string name="menu_opções">Caderno Pessoal</string>
+    <string name="menu_caderno_compartilhado">Caderno Compartilhado</string>
+    <string name="menu_opções">Opções</string>
+    <string name="menu_notas">Anotações</string>
+    <string name="menu_anexos">Anexos</string>
+    <string name="menu_agenda">Agenda</string>
+    <string name="menu_configurar">Configurações</string>
 
 
     <string name="botao_login">Login</string>
